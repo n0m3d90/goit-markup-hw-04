@@ -91,6 +91,14 @@ body{
     padding-top: 32px;
     padding-bottom: 32px;
 }
+.header_info svg{
+    padding-right: 10px;
+    fill: var(--gray-color);
+}
+.header_info svg:hover{
+    fill: green;
+
+}
 
 .header__info1{
     color:var(--aqua-color);
@@ -378,3 +386,4 @@ top: 774px;
 left: 815px;
 border-radius: 4px 0px 0px 0px;
 }
+
