@@ -91,6 +91,7 @@ body{
     padding-top: 32px;
     padding-bottom: 32px;
 }
+
 .header__info1{
     color:var(--aqua-color);
     text-decoration: none;
@@ -167,6 +168,7 @@ body{
     line-height: 1.14;
     color:#212121;
     margin-bottom: 10px;
+    margin-top: 30px;
 }
 .qualities p{
     color:var(--gray-color);
@@ -226,6 +228,29 @@ body{
 .our_team_p2{
     color: var(--gray-color);
     margin-bottom: 30px;
+}
+
+/* Regular customers*/
+.regular_customers{
+    padding-top: 94px;
+    padding-bottom: 94px;
+    display: flex;
+   justify-content: center;
+}
+.regular_customers h2{
+    font-family: var(--primary-font);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.regular_customers_img ul{
+    list-style: none;
+    display: flex;
+   color: #AFB1B8;
+   gap:30px;
+   ;
 }
 /* footer section */
 .footer{
@@ -319,9 +344,8 @@ body{
 }
 .list__section li:hover,
 .list__section li:focus{
-    box-shadow:  0px 2px 1px 0px #00000033,0px 1px 1px 0px #00000024,0px 1px 3px 0px #0000001F;
-    border-radius: 0px 0px 4px 4px;
-
+    box-shadow: 1px 4px 6px 0px #00000029, 0px 4px 4px 0px #0000000F, 0px 1px 1px 0px #0000001F;
+    border-radius: 1px 1px 4px 4px;
 }
 .list__section__p1{
     font-weight: 700;
@@ -344,4 +368,13 @@ body{
     margin-left:auto;
     margin-right:auto;
     width:1200px;
+}
+
+.icon{
+background-color: #F5F4FA;
+width: 270px;
+height: 120px;
+top: 774px;
+left: 815px;
+border-radius: 4px 0px 0px 0px;
 }
