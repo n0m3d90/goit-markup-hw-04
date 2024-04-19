@@ -83,7 +83,7 @@ body{
     color:var(--aqua-color);
 }
 
-.header_info{
+.header__info{
     display: flex;
     justify-content: space-around;
     align-items: flex-end;
@@ -91,15 +91,25 @@ body{
     padding-top: 32px;
     padding-bottom: 32px;
 }
-.header_info svg{
-    height: 16px;
-    width: 16px;
+.header__info1 svg{
+    width: 25px;
+    height: 20px;
     padding-right: 10px;
     fill: var(--gray-color);
 }
-.header_info svg:hover{
-    fill: green;
-
+.header__info2 svg{
+    width: 20px;
+    height: 25px;
+    padding-right: 10px;
+    fill: var(--gray-color);
+}
+.header__info1 svg:hover,
+.header__info1 svg:focus{
+    fill: var(--green-color);
+}
+.header__info2 svg:hover,
+.header__info2 svg:focus{
+    fill:var(--green-color);
 }
 
 .header__info1{
@@ -168,14 +178,22 @@ body{
     
 .qualities ul{
     display: flex;
+    justify-content: center;
     gap:30px;
     list-style: none;
 }
+.qualities_list li{
+    width: 270px;
+    height: 120px;
+    background-color: var(--brightgray);
+    
+}
 
 .qualities_list svg{
-    width:270px ;
-    height:120px ;
-    background-color: var(--brightgray);
+    width:70px ;
+    height:70px ;
+    margin-bottom: 30px;
+    padding: 25px 100px;
 }
 
 .qualities h4{
@@ -199,6 +217,7 @@ body{
     line-height:1.16;
     text-align: center;
     margin-bottom: 50px;
+    margin-top: 94px;
 }
 .what_we_do_img{
     display: flex;
@@ -230,6 +249,9 @@ body{
     text-align: center;
     
 }
+.our_team ul:hover{
+    fill:var(--aqua-color);
+}
 .our_team li{
     box-shadow:  0px 2px 1px 0px #00000033,0px 1px 1px 0px #00000024,0px 1px 3px 0px #0000001F;
     border-radius: 0px 0px 4px 4px;
@@ -246,37 +268,56 @@ body{
     margin-bottom: 30px;
 }
 .our_team_media li{
-    padding-bottom: 12px;
+    padding: 12px;
     border-radius: 50%;
+    margin-top: 16px;
+    margin-bottom: 30px;
+    gap:10px;
 }
 .our_team_media li:hover{
-    background-color: var(--aqua-color);
+    fill:var(--aqua-color);
+    stroke: var(--aqua-color);
+    pad
 }
+
 
 /* Regular customers*/
 .regular_customers{
+    display: flex;
+    justify-content: center;
+    width: 1200px;
     padding-top: 94px;
     padding-bottom: 94px;
-    display: flex;
-   justify-content: center;
 }
 .regular_customers h2{
     font-family: var(--primary-font);
-    font-weight: 700;
     font-size: 36px;
-    line-height: 42px;
+    font-weight: 600;
+    line-height: 1.16;
     text-align: center;
-    margin-bottom: 50px;
 }
 .regular_customers_img ul{
-    list-style: none;
     display: flex;
-   color: #AFB1B8;
-   gap:30px;
-   ;
+    justify-content: center;
+    list-style: none;
+
 }
+.regular_customers_img li{
+    gap:30px;
+}
+.regular_customers_img svg{
+    width: 106px;
+    height: 60px;
+    padding: 16px 32px;
+    border: 1px solid var(--black-color);
+    margin-top:50px;
+    margin-bottom: 94px;
+}
+
+
 /* footer section */
 .footer{
+    display: flex;
     padding-top: 60px;
     padding-left: 150px;
     padding-bottom: 60px;
@@ -322,6 +363,21 @@ body{
 .footer__info:hover,
 .footer__info:focus{
     color: var(--green-color);
+}
+.footer_icon{
+    list-style: none;
+    margin-left: 70px;
+    margin-top: 111px;
+}
+.footer_icon p{
+    font-family: var(--primary-font);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    color: var(--brightgray);
+}
+.footer_icon li{
+display: flex;
 }
 
 
@@ -395,20 +451,15 @@ body{
 
 .icon{
 background-color: #F5F4FA;
-width: 270px;
-height: 120px;
-top: 774px;
-left: 815px;
-border-radius: 4px 0px 0px 0px;
+width: 20px;
+height: 20px;
+gap 12px;
+padding: 12px;
+border-radius: 50px;
 }
 
-.icon{
-    width: 20px;
-    height: 20px;
-    gap 12px;
-    margin-bottom:30px;
-}
-.icon:hover{
+.icon:hover,
+.icon:focus{
     fill:var(--aqua-color);
     stroke: var(--aqua-color);
 }
