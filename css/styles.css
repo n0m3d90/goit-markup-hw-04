@@ -450,3 +450,65 @@ body{
     fill:var(--aqua-color);
     stroke: var(--aqua-color);
 }
+
+/* button section */
+.buttons{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 94px; 
+    gap:10px;
+}
+.buttons button{
+    background-color:var(--brightgray);
+    color: var(--black-color);
+    text-align:center;
+    line-height: 1.62;
+    font-size: 16px;
+    cursor:pointer;
+    padding: 2px 15px;
+    border-radius: 4px;
+    border: #F5F4FA;
+}
+
+.buttons button:active,
+.buttons button:hover,
+.buttons button:focus{
+    color:var(--white-color);
+    background-color: var(--aqua-color);
+    box-shadow:  1px 2px 1px 1px #00000033,1px 1px 1px 1px #00000024,1px 1px 3px 1px #0000001F;
+    border-radius: 1px 1px 4px 4px;
+}
+/* list section */
+.list__section ul{
+    list-style:none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap:30px;
+    justify-content: center;
+    margin-bottom: 94px;
+    
+}
+.list__section li:hover,
+.list__section li:focus{
+    box-shadow: 1px 4px 6px 0px #00000029, 0px 4px 4px 0px #0000000F, 0px 1px 1px 0px #0000001F;
+    border-radius: 1px 1px 4px 4px;
+}
+.list__section__p1{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    color:var(--black-color);
+    margin-top: 20px;
+    margin-bottom: 4px;
+}
+
+.list__section__p2{
+    font-size: 16px;
+    line-height: 1.875;
+    color: var(--gray-color);
+    margin-bottom: 20px;
+    border-bottom:1px solid var(--whitish);
+}
