@@ -292,15 +292,24 @@ body{
     color: var(--gray-color);
     margin-bottom: 30px;
 }
-.our_team_media{
+.our_team_media a{
+    padding: 20px;
+    background-color:transparent;
+    border-radius: 50%;
 }
-.our_team_media div{
+.our_team_media a:hover .icon{
+    stroke: var(--white-color);
+    fill: var(--white-color);
+}
+.our_team_media a:hover{
+    background-color: var(--aqua-color);
+}
+.our_team_media li{
+    margin-bottom: 30px;
 }
 .our_team_media svg{
     width: 20px;
     height: 20px;
-    margin-bottom: 42px;
-    margin-top: 28px;
 }
 .our_team_media svg:hover,
 .our_team_media svg:focus{
@@ -444,6 +453,7 @@ body{
 .footer_icon svg{
     width: 20px;
     height: 20px;
+    stroke: var(--white-color);
 }
 .footer_icon svg:hover,
 .footer_icon svg:focus{
