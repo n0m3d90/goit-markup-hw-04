@@ -421,6 +421,7 @@ body{
     letter-spacing: 0.03em;
     text-align: left;
     color: var(--white-color);
+    padding-bottom: 20px;
 }
 .footer_icon ul{
     display: flex;
@@ -429,8 +430,16 @@ body{
 
 }
 .footer_icon li{
-    padding-top: 20px;
 
+}
+.footer_icon a{
+    padding: 10px;
+    border-radius: 50%;
+    background-color:var(--gray-color);
+}
+.footer_icon a:hover .f.icon,
+.footer_icon a:hover{
+    background-color: var(--aqua-color);
 }
 .footer_icon svg{
     width: 20px;
