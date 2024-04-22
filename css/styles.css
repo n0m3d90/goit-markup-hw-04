@@ -97,6 +97,7 @@ body{
     padding-top: 32px;
     padding-bottom: 32px;
 }
+
 .header_info ul{
     list-style: none;
     stroke: var(--gray-color);
@@ -457,6 +458,9 @@ body{
 }
 .footer_icon a{
     padding: 10px;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
     border-radius: 100px;
     background-color:var(--gray-color);
 }
