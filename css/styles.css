@@ -89,7 +89,7 @@ body{
     color:var(--aqua-color);
 }
 
-.header__info{
+.header_info{
     display: flex;
     justify-content: space-around;
     align-items: flex-end;
@@ -97,6 +97,11 @@ body{
     padding-top: 32px;
     padding-bottom: 32px;
 }
+.header_info ul{
+    list-style: none;
+    stroke: var(--gray-color);
+}
+
 .header__info1 svg{
     width: 25px;
     height: 20px;
@@ -293,7 +298,7 @@ body{
     margin-bottom: 30px;
 }
 .our_team_media a{
-    padding: 20px;
+    padding: 10px;
     background-color:transparent;
     border-radius: 50%;
 }
@@ -306,10 +311,13 @@ body{
 }
 .our_team_media li{
     margin-bottom: 30px;
+    margin-top: 20px;
 }
 .our_team_media svg{
     width: 20px;
     height: 20px;
+    fill:var(--dark-grey-color);
+    stroke: var(--dark-grey-color);
 }
 .our_team_media svg:hover,
 .our_team_media svg:focus{
@@ -346,15 +354,22 @@ body{
     width: 170px;
     height: 92px;
 }
+.regular_customers_img div:hover{
+    border-color: var(--aqua-color);
+}
 .regular_customers_img svg{
     height: 60px;
     width: 106px;
     margin: 16px 32px;
+    fill: var(--dark-grey-color);
+    stroke: var(--dark-grey-color);
 }
 .regular_customers_img svg:hover,
 .regular_customers_img svg:focus{
     fill: var(--aqua-color);
     stroke: var(--aqua-color);
+    
+
 }
 
 /* footer section */
@@ -370,7 +385,6 @@ body{
 }
 .footer div{
     padding-right:94px ;
-    padding-left: 115px;
 }
 .footer_atribut{
     font-family: var(--secondary-font);
@@ -443,7 +457,7 @@ body{
 }
 .footer_icon a{
     padding: 10px;
-    border-radius: 50%;
+    border-radius: 100px;
     background-color:var(--gray-color);
 }
 .footer_icon a:hover .f.icon,
@@ -454,11 +468,12 @@ body{
     width: 20px;
     height: 20px;
     stroke: var(--white-color);
+    fill: var(--white-color);
 }
 .footer_icon svg:hover,
 .footer_icon svg:focus{
-    fill:var(--aqua-color);
-    stroke: var(--aqua-color);
+    fill:var(--white-color);
+    stroke: var(--white-color);
 }
 
 /* button section */
@@ -501,7 +516,9 @@ body{
     margin-bottom: 94px;
     margin-left: 215px;
     margin-right: 215px;
-    
+}
+.list__section li{
+    border-bottom: 1px solid var(--brightgray);
 }
 .list__section li:hover,
 .list__section li:focus{
@@ -515,6 +532,7 @@ body{
     color:var(--black-color);
     margin-top: 20px;
     margin-bottom: 4px;
+    margin-left: 15px;
 }
 
 .list__section__p2{
@@ -522,5 +540,5 @@ body{
     line-height: 1.875;
     color: var(--gray-color);
     margin-bottom: 20px;
-    border-bottom:1px solid var(--whitish);
+    margin-left: 15px;
 }
